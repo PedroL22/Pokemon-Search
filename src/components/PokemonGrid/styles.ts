@@ -1,6 +1,6 @@
-import styled, { withTheme } from "styled-components";
-import Link from "next/link";
-import Image from "next/image";
+import styled, { withTheme } from 'styled-components'
+import Link from 'next/link'
+import Image from 'next/image'
 
 export const GridComponentWrapper = withTheme(styled(Link)`
   display: flex;
@@ -20,14 +20,14 @@ export const GridComponentWrapper = withTheme(styled(Link)`
   }
 
   ${(props) =>
-    props.theme.title === "dark" &&
+    props.theme.title === 'dark' &&
     `
     background-color: rgb(55 65 81);
     &:hover {
       background-color: rgb(75 85 99);
     }
   `}
-`);
+`)
 
 export const GridComponentWrapperInner = styled.div`
   display: flex;
@@ -42,7 +42,7 @@ export const GridComponentWrapperInner = styled.div`
   @media (min-width: 768px) {
     width: 24rem;
   }
-`;
+`
 
 export const GridComponentImage = styled(Image)`
   object-fit: contain;
@@ -51,7 +51,7 @@ export const GridComponentImage = styled(Image)`
   margin-right: auto;
   width: 200px;
   height: 200px;
-`;
+`
 
 export const GridComponentName = withTheme(styled.p`
   margin-left: auto;
@@ -66,13 +66,13 @@ export const GridComponentName = withTheme(styled.p`
   }
 
   ${(props) =>
-    props.theme.title === "dark" &&
+    props.theme.title === 'dark' &&
     `
     color: rgb(229 231 235);
   `}
-`);
+`)
 
 export const GridComponentXP = styled.span`
   font-weight: 700;
   margin-left: 0.25rem;
-`;
+`

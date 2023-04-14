@@ -1,6 +1,6 @@
-import styled, { withTheme } from "styled-components";
-import Link from "next/link";
-import Image from "next/image";
+import styled, { withTheme } from 'styled-components'
+import Link from 'next/link'
+import Image from 'next/image'
 
 export const DetailsWrapper = withTheme(styled.div`
   display: flex;
@@ -9,17 +9,17 @@ export const DetailsWrapper = withTheme(styled.div`
   margin-bottom: -1.5rem;
 
   ${(props) =>
-    props.theme.title === "dark" &&
+    props.theme.title === 'dark' &&
     `
     background-color: rgb(31 41 55);
   `}
-`);
+`)
 
 export const DetailsMain = styled.main`
   margin-top: 1.25rem;
   margin-left: auto;
   margin-right: auto;
-`;
+`
 
 export const SectionWrapper = styled.div`
   display: block;
@@ -40,7 +40,7 @@ export const SectionWrapper = styled.div`
     display: flex;
     gap: 1.25rem;
   }
-`;
+`
 
 export const Section = withTheme(styled.section`
   background-color: rgb(255 255 255);
@@ -52,11 +52,11 @@ export const Section = withTheme(styled.section`
   box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);
 
   ${(props) =>
-    props.theme.title === "dark" &&
+    props.theme.title === 'dark' &&
     `
      background-color: rgb(55 65 81);
   `};
-`);
+`)
 
 export const PokemonImage = styled(Image)`
   margin-left: auto;
@@ -65,7 +65,7 @@ export const PokemonImage = styled(Image)`
   object-fit: contain;
   width: 300px;
   height: 300px;
-`;
+`
 
 export const PokemonTitle = withTheme(styled.h1`
   text-align: center;
@@ -75,11 +75,11 @@ export const PokemonTitle = withTheme(styled.h1`
   font-weight: 700;
 
   ${(props) =>
-    props.theme.title === "dark" &&
+    props.theme.title === 'dark' &&
     `
     color: rgb(229 231 235);
   `};
-`);
+`)
 
 export const PokemonXP = withTheme(styled.p`
   text-align: center;
@@ -87,11 +87,11 @@ export const PokemonXP = withTheme(styled.p`
   line-height: 2rem;
 
   ${(props) =>
-    props.theme.title === "dark" &&
+    props.theme.title === 'dark' &&
     `
     color: rgb(229 231 235);
   `};
-`);
+`)
 
 export const SectionTitle = withTheme(styled.p`
   text-align: center;
@@ -100,11 +100,11 @@ export const SectionTitle = withTheme(styled.p`
   font-weight: 700;
 
   ${(props) =>
-    props.theme.title === "dark" &&
+    props.theme.title === 'dark' &&
     `
     color: rgb(229 231 235);
   `};
-`);
+`)
 
 export const SectionItem = withTheme(styled.p`
   text-align: center;
@@ -113,34 +113,34 @@ export const SectionItem = withTheme(styled.p`
   text-transform: capitalize;
 
   ${(props) =>
-    props.theme.title === "dark" &&
+    props.theme.title === 'dark' &&
     `
     color: rgb(229 231 235);
   `};
-`);
+`)
 
 export const GalleryGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-left: auto;
   margin-right: auto;
-`;
+`
 
 export const GalleryTitle = withTheme(styled.div`
   text-align: center;
 
   ${(props) =>
-    props.theme.title === "dark" &&
+    props.theme.title === 'dark' &&
     `
     color: rgb(229 231 235);
   `};
-`);
+`)
 
 export const GalleryImage = styled(Image)`
   object-fit: contain;
   width: 100px;
   height: 100px;
-`;
+`
 
 export const ShowMoreTrue = withTheme(styled.div`
   text-align: center;
@@ -151,26 +151,26 @@ export const ShowMoreTrue = withTheme(styled.div`
   border-width: 2px;
 
   ${(props) =>
-    props.theme.title === "dark" &&
+    props.theme.title === 'dark' &&
     `
     border-color: rgb(75 85 99); 
   `};
-`);
+`)
 
 export const ShowMoreFalse = withTheme(styled.div`
   text-align: center;
 
   ${(props) =>
-    props.theme.title === "dark" &&
+    props.theme.title === 'dark' &&
     `
     color: rgb(229 231 235);
   `};
-`);
+`)
 
 export const BackButtonWrapper = styled.div`
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
-`;
+`
 
 export const ShowMoreButton = styled.button`
   display: flex;
@@ -197,7 +197,7 @@ export const ShowMoreButton = styled.button`
   &:active {
     background-color: rgb(30 58 138);
   }
-`;
+`
 
 export const BackButton = styled(Link)`
   padding-top: 0.75rem;
@@ -219,4 +219,4 @@ export const BackButton = styled(Link)`
   &:active {
     background-color: rgb(30 58 138);
   }
-`;
+`

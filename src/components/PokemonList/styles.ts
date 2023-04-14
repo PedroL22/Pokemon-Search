@@ -1,11 +1,11 @@
-import styled, { withTheme } from "styled-components";
-import Link from "next/link";
-import Image from "next/image";
+import styled, { withTheme } from 'styled-components'
+import Link from 'next/link'
+import Image from 'next/image'
 
 export const ListComponentWrapper = styled(Link)`
   display: flex;
   text-decoration: none;
-`;
+`
 
 export const ListComponentWrapperInner = withTheme(styled.div`
   display: flex;
@@ -22,26 +22,26 @@ export const ListComponentWrapperInner = withTheme(styled.div`
   box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);
 
   ${(props) =>
-    props.theme.title === "dark" &&
+    props.theme.title === 'dark' &&
     `
     background-color: rgb(55 65 81);
     &:hover {
       background-color: rgb(75 85 99);
     }
   `}
-`);
+`)
 
 export const ListComponentWrapperInnerInner = styled.div`
   display: flex;
   margin-left: auto;
   margin-right: auto;
-`;
+`
 
 export const ListComponentImage = styled(Image)`
   object-fit: contain;
   width: 40px;
   height: 40px;
-`;
+`
 
 export const ListComponentName = withTheme(styled.p`
   display: flex;
@@ -52,13 +52,13 @@ export const ListComponentName = withTheme(styled.p`
   color: black;
 
   ${(props) =>
-    props.theme.title === "dark" &&
+    props.theme.title === 'dark' &&
     `
     color: rgb(229 231 235);
   `}
-`);
+`)
 export const ListComponentXP = styled.p`
   font-weight: 700;
   margin-left: 0.25rem;
   text-decoration: none;
-`;
+`

@@ -1,25 +1,25 @@
-import styled, { withTheme } from "styled-components";
-import Image from "next/image";
+import styled, { withTheme } from 'styled-components'
+import Image from 'next/image'
 
 export const Container = withTheme(styled.div`
   background-color: ${(props) =>
-    props.theme.title === "light" ? "rgb(229, 231, 235)" : "rgb(31 41 55)"};
+    props.theme.title === 'light' ? 'rgb(229, 231, 235)' : 'rgb(31 41 55)'};
 
   min-height: 100vh;
   margin-bottom: -1.5rem;
-`);
+`)
 
 export const SearchWrapper = styled.div`
   display: flex;
   padding-top: 0.75rem;
-`;
+`
 
 export const SearchWrapperInner = styled.div`
   display: flex;
   margin-left: auto;
   margin-right: auto;
   gap: 0.25rem;
-`;
+`
 
 export const SearchInput = withTheme(styled.input`
   outline: 2px solid transparent;
@@ -38,7 +38,7 @@ export const SearchInput = withTheme(styled.input`
   }
 
   ${(props) =>
-    props.theme.title === "dark" &&
+    props.theme.title === 'dark' &&
     `
     background-color: rgb(55 65 81);
     border-color: rgb(31 41 55);
@@ -47,7 +47,7 @@ export const SearchInput = withTheme(styled.input`
       border-color: rgb(31 41 55);
     }
   `}
-`);
+`)
 
 export const GridSwitchButton = withTheme(styled.button`
   background-color: rgb(156 163 175);
@@ -70,7 +70,7 @@ export const GridSwitchButton = withTheme(styled.button`
   }
 
   ${(props) =>
-    props.theme.title === "dark" &&
+    props.theme.title === 'dark' &&
     `
     background-color: rgb(75 85 99);
     &:hover {
@@ -80,15 +80,15 @@ export const GridSwitchButton = withTheme(styled.button`
       background-color: rgb(55 65 81);
     }
   `}
-`);
+`)
 
 export const GridWrapper = styled.div`
   margin-top: 0.75rem;
-`;
+`
 
 export const ListWrapper = styled.div`
   margin-top: 0.25rem;
-`;
+`
 
 export const LoadingImage = styled(Image)`
   display: flex;
@@ -96,7 +96,7 @@ export const LoadingImage = styled(Image)`
   margin-right: auto;
   margin-top: 25vh;
   margin-bottom: 25vh;
-`;
+`
 
 export const GridWrapperInner = styled.div`
   display: grid;
@@ -128,7 +128,7 @@ export const GridWrapperInner = styled.div`
     padding-left: 0px;
     padding-right: 0px;
   }
-`;
+`
 
 export const PaginationWrapper = styled.div`
   display: flex;
@@ -136,7 +136,7 @@ export const PaginationWrapper = styled.div`
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   gap: 0.25rem;
-`;
+`
 
 export const PaginationButton = withTheme(styled.button`
   padding-top: 0.75rem;
@@ -161,7 +161,7 @@ export const PaginationButton = withTheme(styled.button`
   }
 
   ${(props) =>
-    props.theme.title === "dark" &&
+    props.theme.title === 'dark' &&
     `
     background-color: rgb(75 85 99);
     &:hover {
@@ -171,7 +171,7 @@ export const PaginationButton = withTheme(styled.button`
        background-color: rgb(55 65 81);
     }
   `}
-`);
+`)
 
 export const CurrentPagePaginationButton = withTheme(styled.button`
   padding-top: 0.75rem;
@@ -196,7 +196,7 @@ export const CurrentPagePaginationButton = withTheme(styled.button`
   }
 
   ${(props) =>
-    props.theme.title === "dark" &&
+    props.theme.title === 'dark' &&
     `
     background-color: rgb(55 65 81);
     &:hover {
@@ -206,4 +206,4 @@ export const CurrentPagePaginationButton = withTheme(styled.button`
        background-color: rgb(55 65 81);
     }
   `}
-`);
+`)
